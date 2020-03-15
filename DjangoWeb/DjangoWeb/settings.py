@@ -1,7 +1,7 @@
 """
-Django settings for BasicProject project.
+Django settings for DjangoWeb project.
 
-Based on by 'django-admin startproject' using Django 2.1.2.
+Based on 'django-admin startproject' using Django 2.1.2.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/2.1/topics/settings/
@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '122b712f-cea0-4ce2-8e6a-db094ff6696f'
+SECRET_KEY = 'daabe1a9-7ef2-47c7-bc53-436bbcce3ace'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -30,8 +30,8 @@ ALLOWED_HOSTS = []
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
 INSTALLED_APPS = [
+    'app',
     # Add your apps here to enable them
-    'HelloDjangoApp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'BasicProject.urls'
+ROOT_URLCONF = 'DjangoWeb.urls'
 
 # Template configuration
 # https://docs.djangoproject.com/en/2.1/topics/templates/
@@ -72,8 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'BasicProject.wsgi.application'
-
+WSGI_APPLICATION = 'DjangoWeb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 DATABASES = {
